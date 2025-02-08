@@ -3,7 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
- // test
+
 const Hero = () => {
   return (
     <div className='pb-20 pt-36'>
@@ -42,7 +42,7 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words='Transforming Concepts into Seamless User Experiences'
+            words='I&apos;m a Web Designer with a passion for code'
             className='text-center text-[40px] md:text-5xl lg:text-6xl'
           />
 
