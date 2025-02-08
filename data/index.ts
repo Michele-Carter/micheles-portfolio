@@ -94,6 +94,7 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://www.pixelperfectwebdesigns.co.nz/projects/husk",
   },
+  /*
   {
     id: 4,
     title: "Burst Digital",
@@ -102,6 +103,7 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://www.burstdigital.co.nz/social-media",
   },
+  */
   {
     id: 5,
     title: "Autistic Innovations",
