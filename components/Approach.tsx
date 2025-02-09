@@ -29,8 +29,7 @@ const Approach = () => {
           title='Development & Progress Update'
           icon={<AceternityIcon order='Phase 2' />}
           des='Once we agree on the plan, I cue my spotify playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way.'
+          designing and coding.  Whether I&apos;m designing on a low code platfom like Webflow, or coding from scratch for a more customised approach, I keep you updated every step of the way.'
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -51,7 +50,7 @@ const Approach = () => {
           title='Development & Launch'
           icon={<AceternityIcon order='Phase 3' />}
           des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
+          I'll translate everything into a user centered design and functional code, building your website
           from the ground up."
         >
           <CanvasRevealEffect
