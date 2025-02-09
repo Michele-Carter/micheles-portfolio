@@ -47,7 +47,7 @@ const Hero = () => {
           />
 
           <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Hi, I&apos;m Michele, a web developer based in Christchurch.
+            Hi, I&apos;m Michele, a Web Designer & Developer based in Christchurch.
           </p>
            
           <a href='#about'>
