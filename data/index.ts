@@ -91,7 +91,7 @@ export const projects = [
     title: "Husk",
     des: "Design thinking for the digital age.",
     img: "/husk.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/webflowIcon.svg"],
     link: "https://www.pixelperfectwebdesigns.co.nz/projects/husk",
   },
   /*
@@ -109,7 +109,7 @@ export const projects = [
     title: "Autistic Innovations",
     des: "A custom built, sleek yet soft design",
     img: "/innovations.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/HostingerIcon.png"],
     link: "https://www.autisticinnovations.co.nz/",
   },
   {
@@ -117,7 +117,7 @@ export const projects = [
     title: "Mac Auto Services",
     des: "A fresh idea for an outdated design",
     img: "/macauto.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    iconLists: ["/webflowIcon.svg"],
     link: "https://www.macautoservices.co.nz/",
   },
 ];
