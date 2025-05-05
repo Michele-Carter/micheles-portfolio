@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
+import Image from "next/image";
 
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
@@ -82,15 +83,24 @@ export const BentoGridItem = ({
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className='w-full h-full absolute'>
-          {img && <img src={img} alt={img} className={cn(imgClassName, "object-cover object-center ")} />}
+          {img && (
+            <Image
+              src={img}
+              alt={img}
+              className={cn(imgClassName, "object-cover object-center")}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          )}
         </div>
         <div className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"} `}>
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
-              //   width={220}
               className='object-cover object-center w-full h-full'
+              width={220}
+              height={220}
             />
           )}
         </div>

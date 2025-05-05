@@ -3,6 +3,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -11,7 +12,9 @@ const RecentProjects = () => {
         A small selection of <span className='text-purple'>recent projects</span>
       </h1>
       <div className='flex flex-wrap items-center justify-center p-4 gap-16 mt-10'>
-        {projects.map((item) => (
+        {projects
+          .filter((project): project is NonNullable<typeof project> => project !== null && project !== undefined)
+          .map((item) => (
           <div className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]' key={item.id}>
             <PinContainer title={item.title} href={item.link}>
               <div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
@@ -19,12 +22,15 @@ const RecentProjects = () => {
                   className='relative w-full h-full overflow-hidden lg:rounded-3xl'
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src='/bg.png' alt='bgimg' />
+                  <Image src='/bg.png' alt='bgimg' fill style={{ objectFit: 'cover' }} />
                 </div>
-                <img
+                <Image
                   src={item.img}
                   alt='cover'
-                  className='z-10 absolute bottom-0 object-cover w-full h-full lg:rounded-2xl'
+                  className='z-10 absolute bottom-0'
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  sizes="(max-width: 640px) 80vw, (max-width: 1024px) 384px, 384px"
                 />
               </div>
 
@@ -50,7 +56,7 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt='icon5' className='p-2' />
+                      <Image src={icon} alt={`tech-icon-${index}`} width={24} height={24} className='p-2' />
                     </div>
                   ))}
                 </div>

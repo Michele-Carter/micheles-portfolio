@@ -86,24 +86,22 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://michele-iphone-clone.netlify.app/",
   },
-  {
+  /*{
     id: 3,
     title: "Husk",
     des: "Design thinking for the digital age.",
     img: "/husk.svg",
     iconLists: ["/webflowIcon.svg"],
     link: "https://www.pixelperfectwebdesigns.co.nz/projects/husk",
-  },
-  /*
+  }*/,
   {
     id: 4,
     title: "Burst Digital",
     des: "A new chapter, a fresh outlook",
     img: "/burst.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/webflowIcon.svg"],
     link: "https://www.burstdigital.co.nz/social-media",
   },
-  */
   {
     id: 5,
     title: "Autistic Innovations",
@@ -119,6 +117,14 @@ export const projects = [
     img: "/macauto.svg",
     iconLists: ["/webflowIcon.svg"],
     link: "https://www.macautoservices.co.nz/",
+  },
+  {
+    id: 7,
+    title: "Cleghorn Roofing",
+    des: "Custom coded new website",
+    img: "/cleghorn-roofing.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+    link: "https://cleghorn-roofing.vercel.app/",
   },
 ];
 
